@@ -1,0 +1,19 @@
+@import "compass/utilities";
+
+// 常用与工具类
+
+.clrfix {
+	@include clearfix;
+}
+
+.legacy-clrfix {
+	@include legacy-pie-clearfix;
+}
+
+.fl {
+	@include float-left;
+}
+
+.fr {
+	@include float-right;
+}

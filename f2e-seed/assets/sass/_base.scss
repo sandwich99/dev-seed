@@ -1,0 +1,70 @@
+@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/layout";
+@import "susy";
+
+// --------------------------------------------
+// settings
+
+$susy: (
+  columns: 12,
+  gutters: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  container: 60em
+);
+
+//$shorthand: 12 1/4 fluid float inside;
+
+// --------------------------------------------
+// layout
+@include border-box-sizing;
+
+.container {
+	@include container;
+	overflow: hidden;
+}
+
+// --------------------------------------------
+// small
+.container {
+	background: #ccc;
+	
+	.col {
+	min-height: 200px;
+	}
+
+
+	.span1 {
+		@include span(1);
+		background: blue;
+	}
+
+	.span2 {
+		@include span(2);
+		background: rgba(#cc1,0.75);
+	}
+
+	.span3 {
+		@include span(3);
+		background: rgba(#A53D8F,0.8);
+	}
+
+}
+
+// --------------------------------------------
+// medium
+
+
+
+// --------------------------------------------
+// large
+
+
+// --------------------------------------------
+// styles (for demo only)
+
+.container {
+}
